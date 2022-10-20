@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    /* background-color: aqua; */
+    height: 70px;
+}
+header .back-img{
+    background-image: url(bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+header .back-img .logo{
+    width: 20%;
+    padding: 35px;
+    margin-left: 20px;
+    /* background-color: rgb(251, 147, 9); */
+}
+.back-img .logo span{
+    font-size:0.5in;
+}
+header .back-img .menu{
+    width: 60%;
+    /* background-color: aliceblue; */
+}
+.back-img .menu{
+    padding: 20px;
+    margin-top: 28px;
+}
+ ul li {
+    display: inline;
+    padding: 50px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+     font-size: 25px;
+}
+li{
+    list-style: none;
+    /* margin-left: 15px; */
+}
+.back-img .menu a:hover{
+    border-bottom: 3px solid rgb(255, 3, 3);
+}
+
+ button{
+   width: 40px;
+   height: 40px;
+   margin-top: 40px;
+}
+
+
+@media (max-width:576) {
+    header{
+        width: 100%;
+        /* background-color: aqua;
+        height: 70px; */
+    }
+     header .back-img{
+        /* background-image: url(bg1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex; */ 
+        width: 50%;
+        height : 500px;
+    }
+    header .back-img .logo{
+        width: 100%;
+        padding: 10px;
+        margin-left: 20px;
+        /* background-color: rgb(251, 147, 9); */
+    }
+    .back-img .logo span{
+        font-size:0.5in;
+    }
+    header .back-img .menu{
+        width: 60%;
+        /* background-color: aliceblue; */
+    }
+}
