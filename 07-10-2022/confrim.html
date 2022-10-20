@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confrim Practice</title>
+      <script>
+           function confrim_check(){
+             if(confirm("are you sure want to leave this page ?")) 
+             {
+                 document.getElementById(p1).innerHTML="okay"
+             }
+             else{
+                document.getElementById(p1).innerHTML="Cancel"
+             }
+          }
+      </script>
+</head>
+<body>
+    <button onclick="confrim_check()">Confrim</button>
+
+    <p id="p1"></p>
+</body>
+</html>
