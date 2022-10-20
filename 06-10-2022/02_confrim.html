@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confrim Javascript</title>
+    <script>
+          function confrim_info(){
+            if(confirm("are you sure want to levae this page ?")){
+                document.getElementById("p1").innerHTML= "Okay"
+                document.body.style.color="red"
+            }
+            else{
+                document.getElementById ("p1").innerHTML="Cansel"
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="confrim_info()">Confrim</button>
+    <p id="p1"></p>
+</body>
+</html>

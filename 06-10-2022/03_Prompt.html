@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promput Javascrip prc</title>
+    <script>
+           function Prompt_information(){
+             let username=prompt ("Enter your Name");
+             if(username ==""){
+              alert("Enter your Name");
+             }
+             else{
+               document.getElementById("p1").innerHTML=username
+             }
+           }
+    </script>
+</head>
+<body>
+    <button onclick="Prompt_information()">Prompt</button>
+    <p id="p1"></p>
+</body>
+</html>
