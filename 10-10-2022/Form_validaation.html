@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validiton</title>
+    <script>
+        function validation() {
+            let fname =document.form1.fname.value;
+            if (fname ==""|| fname==null)
+            {
+                alert("Enter first name")
+                document.form1.fname.focus();
+                return false;
+            
+            }
+            else if (! isNaN (fname)){
+                alert("Enter alphabet");
+            }
+        }
+    </script>
+</head>
+<body>
+     <form action="" name="form1" method="post"onsubmit="return validation()">
+        First name : <input type="text"name="fname"/>
+        <br><br>
+        <input type="submit"onclick="" value="check validition">
+    </form>
+</body>
+</html>

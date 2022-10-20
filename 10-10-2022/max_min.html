@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max_Mininum</title>
+    <script>
+        function max_min(){
+            let n1 =document.form1.num1.value;
+            let n2 = document .form1 .num2 .value;
+            if (n1 < n2) {
+                document.getElementById("res").innerHTML="n1  is min";
+                return false;
+            }
+            else if (n2 < n1) {
+                document.getElementById("res").innerHTML="n2 is min";
+                  return false;
+            }
+            else{
+                 document.getElementById("res").innerHTML="both are same"
+                 return false;
+            }
+        }
+   </script>
+</head>
+<body>
+    <form action="" name="form1" method="post" onsubmit=" return max_min()">
+          
+        <label for="">Number 1:</label>
+        <input type="text" name="num1" id="num1"/>
+        <br><br>
+        <label for="">Number 2:</label>
+        <input type="text" name="num2" id="num2"/>
+        <br><br>
+        <input type="Submit" value="Result">
+    </form>
+     <p id="res"></p>
+      
+    
+  
+</body>
+</html>
