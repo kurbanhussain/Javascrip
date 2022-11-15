@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menubar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
+
+    <style>
+          header{
+              width: 100%;
+              height: 70px;
+              background-color: antiquewhite;
+              color: black;
+          }
+          .header-nav{
+            display: flex;
+            /* justify-content: space-between; */
+            width: 100%;
+          }
+          .header-nav .logo {
+            width: 20%;
+            /* background-color: aliceblue; */
+            font-size: 0.4in;
+            padding: 15px;
+          }
+          .header-nav .menus{
+            width: 80%;
+          }
+          a{
+            text-decoration: none;
+            color: black;
+            font-size: 0.2in;
+          }
+          ul{
+             list-style: none;
+             display: flex;
+             align-items: center;
+             justify-content:flex-end;
+          }
+          ul li {
+            padding: 20px;
+            /* margin-right: 20px; */
+            margin-top: 5px;
+          }
+          .disp_menu{
+             width: 30px;
+             display: none;
+             height: 30px;
+          }
+          
+          @media (max-width:576px) {
+          .header-nav{
+           position: relative;
+          }
+          .disp_menu{
+            display: block;
+            position: absolute;
+            right: 33px;
+            top: 26px;
+          }
+           .menus{
+            display: none;
+           }
+           .show-menu {
+            position: absolute;
+            top: 70px;
+            right: 0px;
+            display: inline-block;
+            width: 500px;
+            color: white;
+            /* background-color: black; */
+            padding: 0;
+           } 
+           .show-menu ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+           }
+          .show-menu ul li {
+            padding: 20px;
+          }
+          }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="back-image">
+              <div class="header-nav">
+                   <div class="logo">
+                    <span class="fa-sharp fa-solid fa-house"></span>
+                   </div>
+                <div class="menus">
+                  <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="">About </a></li>
+                      <li><a href="">Service</a></li>
+                      <li><a href="">Help</a></li>
+                      <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+                <button class="disp_menu">
+                    <span class="fa-sharp fa-solid fa-bars"></span>
+                </button>
+              </div>
+        </div>
+     </header>
+
+     <script>
+         let menu =document.querySelector(".menus");
+         let disp = document.querySelector(".disp_menu");
+         let headernav =document.querySelector
+         (".header-nav");
+
+         disp.addEventListener("click", function(){
+            menu.classList.toggle("show-menu");
+         });
+
+        //  disp.addEventListener("click", function(){
+        //     menu.classList.remove("menus");
+        //  })
+     </script>
+</body>
+</html>
